@@ -30,6 +30,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" systemColor="systemBrownColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="XvN-h6-M89" kind="show" id="SDF-Hh-VqN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -48,7 +51,7 @@
             <objects>
                 <viewController id="XvN-h6-M89" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WQR-qW-IT2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCL-CM-LwL">
@@ -85,12 +88,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d2-7i-rY2">
-                                                <rect key="frame" x="255" y="494" width="75" height="35"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -98,8 +95,10 @@
                                             <constraint firstItem="qFd-HW-hq7" firstAttribute="top" secondItem="aqs-mo-ISq" secondAttribute="bottom" constant="60" id="O1Q-6a-Hq9"/>
                                             <constraint firstAttribute="trailing" secondItem="qFd-HW-hq7" secondAttribute="trailing" constant="30" id="Tuv-ux-7BD"/>
                                             <constraint firstItem="aqs-mo-ISq" firstAttribute="leading" secondItem="HpL-3A-CqP" secondAttribute="leading" constant="20" id="XZ0-gH-lih"/>
+                                            <constraint firstAttribute="width" constant="393" id="gNI-id-BFr"/>
                                             <constraint firstAttribute="bottom" secondItem="qFd-HW-hq7" secondAttribute="bottom" constant="630" id="jLS-Tz-EBH"/>
                                             <constraint firstItem="qFd-HW-hq7" firstAttribute="leading" secondItem="HpL-3A-CqP" secondAttribute="leading" constant="30" id="kTK-wP-se4"/>
+                                            <constraint firstAttribute="height" constant="759" id="l1H-Y3-vza"/>
                                             <constraint firstAttribute="trailing" secondItem="aqs-mo-ISq" secondAttribute="trailing" constant="20" id="xMx-jB-WyA"/>
                                             <constraint firstAttribute="bottom" secondItem="aqs-mo-ISq" secondAttribute="bottom" constant="675" id="zgE-xf-ldx"/>
                                         </constraints>
@@ -112,6 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="PI3-ah-c45"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4af-V6-t7L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHb-1N-IGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
