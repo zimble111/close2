@@ -19,6 +19,19 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiB-IC-h4n">
                                 <rect key="frame" x="0.0" y="-7" width="393" height="859"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-hu-yMA">
+                                        <rect key="frame" x="252" y="717" width="99" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
                         </subviews>
@@ -37,21 +50,86 @@
                     <view key="view" contentMode="scaleToFill" id="WQR-qW-IT2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCL-CM-LwL">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HpL-3A-CqP">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcc-Wq-nNQ">
+                                                <rect key="frame" x="20" y="160" width="186" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Close2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqs-mo-ISq">
+                                                <rect key="frame" x="30" y="50" width="300" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="H7G-Rd-R85"/>
+                                                    <constraint firstAttribute="width" constant="45" id="rgE-M7-SvF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qFd-HW-hq7">
+                                                <rect key="frame" x="199" y="170" width="165" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="210-Oa-wsl"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="Dlc-83-EVJ"/>
+                                                    <constraint firstAttribute="width" constant="97" id="EYP-Ai-wFl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d2-7i-rY2">
+                                                <rect key="frame" x="255" y="494" width="75" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="aqs-mo-ISq" firstAttribute="top" secondItem="HpL-3A-CqP" secondAttribute="top" constant="30" id="4sJ-Wh-cO7"/>
+                                            <constraint firstItem="qFd-HW-hq7" firstAttribute="top" secondItem="aqs-mo-ISq" secondAttribute="bottom" constant="60" id="O1Q-6a-Hq9"/>
+                                            <constraint firstAttribute="trailing" secondItem="qFd-HW-hq7" secondAttribute="trailing" constant="30" id="Tuv-ux-7BD"/>
+                                            <constraint firstItem="aqs-mo-ISq" firstAttribute="leading" secondItem="HpL-3A-CqP" secondAttribute="leading" constant="20" id="XZ0-gH-lih"/>
+                                            <constraint firstAttribute="bottom" secondItem="qFd-HW-hq7" secondAttribute="bottom" constant="630" id="jLS-Tz-EBH"/>
+                                            <constraint firstItem="qFd-HW-hq7" firstAttribute="leading" secondItem="HpL-3A-CqP" secondAttribute="leading" constant="30" id="kTK-wP-se4"/>
+                                            <constraint firstAttribute="trailing" secondItem="aqs-mo-ISq" secondAttribute="trailing" constant="20" id="xMx-jB-WyA"/>
+                                            <constraint firstAttribute="bottom" secondItem="aqs-mo-ISq" secondAttribute="bottom" constant="675" id="zgE-xf-ldx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="v50-jr-Lr7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wdt-1d-2Fr"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PI3-ah-c45"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHb-1N-IGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="-607"/>
+            <point key="canvasLocation" x="942.74809160305335" y="-607.04225352112678"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
