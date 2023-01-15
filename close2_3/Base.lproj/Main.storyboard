@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="close2_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="close2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv2-vv-G9X">
+                                        <rect key="frame" x="313" y="742" width="69" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="bj5-Br-5Md"/>
+                                            <constraint firstAttribute="height" constant="35" id="e95-CN-vxv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="карта"/>
+                                        <connections>
+                                            <segue destination="OGe-QF-1zU" kind="show" id="9si-3d-toS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
@@ -56,8 +68,10 @@
                                     <constraint firstAttribute="trailing" secondItem="ceZ-rh-sQ8" secondAttribute="trailing" constant="8" id="66z-0X-7ZA"/>
                                     <constraint firstItem="ux2-hu-yMA" firstAttribute="centerX" secondItem="MiB-IC-h4n" secondAttribute="centerX" id="NDv-gO-POH"/>
                                     <constraint firstItem="lLe-oX-SGN" firstAttribute="centerX" secondItem="MiB-IC-h4n" secondAttribute="centerX" id="Orn-Zq-hNh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uv2-vv-G9X" secondAttribute="trailing" constant="11" id="bg5-d5-QPY"/>
                                     <constraint firstItem="lLe-oX-SGN" firstAttribute="top" secondItem="ux2-hu-yMA" secondAttribute="bottom" constant="10" id="c51-f9-oFm"/>
                                     <constraint firstItem="ceZ-rh-sQ8" firstAttribute="top" secondItem="MiB-IC-h4n" secondAttribute="top" constant="208" id="tOJ-8V-t58"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uv2-vv-G9X" secondAttribute="bottom" constant="75" id="yiF-p9-kc3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -70,6 +84,7 @@
                             <constraint firstAttribute="bottom" secondItem="MiB-IC-h4n" secondAttribute="bottom" id="lwZ-yF-jVe"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="K0N-XX-UHS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +192,7 @@
         <!--Map View Controller-->
         <scene sceneID="z7S-tY-dXH">
             <objects>
-                <viewController id="OGe-QF-1zU" customClass="MapViewController" customModule="close2_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="OGe-QF-1zU" customClass="MapViewController" customModule="close2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r4J-Ut-60f">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,16 +201,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-e3-uYZ">
+                                <rect key="frame" x="235" y="129" width="150" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="66T-ar-kMF"/>
+                                    <constraint firstAttribute="height" constant="35" id="OZc-eQ-Eby"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="// первый экран"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7k6-Zp-pXJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MAJ-2P-lUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MAJ-2P-lUS" firstAttribute="trailing" secondItem="xN3-e3-uYZ" secondAttribute="trailing" constant="8" id="Bw8-7U-iTj"/>
                             <constraint firstAttribute="bottom" secondItem="K27-d1-vyU" secondAttribute="bottom" id="SMD-Q8-3mG"/>
+                            <constraint firstItem="xN3-e3-uYZ" firstAttribute="top" secondItem="MAJ-2P-lUS" secondAttribute="top" constant="70" id="abt-ZN-Qa0"/>
                             <constraint firstItem="K27-d1-vyU" firstAttribute="top" secondItem="r4J-Ut-60f" secondAttribute="top" id="b0U-Sa-1vg"/>
                             <constraint firstItem="K27-d1-vyU" firstAttribute="leading" secondItem="MAJ-2P-lUS" secondAttribute="leading" id="jsY-5Q-zKt"/>
                             <constraint firstItem="K27-d1-vyU" firstAttribute="trailing" secondItem="MAJ-2P-lUS" secondAttribute="trailing" id="nDh-oA-JwN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sxQ-gC-Miz"/>
                     <connections>
                         <outlet property="mapview" destination="K27-d1-vyU" id="nQJ-SE-L0k"/>
                     </connections>
