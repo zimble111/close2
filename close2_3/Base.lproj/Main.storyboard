@@ -16,27 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiB-IC-h4n">
-                                <rect key="frame" x="0.0" y="-7" width="393" height="859"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiB-IC-h4n">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By clicking next you agree to the Close2 App Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-rh-sQ8">
-                                        <rect key="frame" x="4" y="208" width="381" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking next you agree to the Close2 App Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-rh-sQ8">
+                                        <rect key="frame" x="8" y="208" width="377" height="67"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By clicking next you agree to the Close2 App Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3C-3X-i8B">
-                                        <rect key="frame" x="6" y="208" width="381" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-hu-yMA">
-                                        <rect key="frame" x="133" y="717" width="123" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-hu-yMA">
+                                        <rect key="frame" x="136.66666666666666" y="717" width="119.99999999999997" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="R3c-HH-AcM"/>
+                                            <constraint firstAttribute="width" constant="120" id="bxB-WZ-6db"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Next" cornerStyle="large">
                                             <backgroundConfiguration key="background">
@@ -48,36 +42,43 @@
                                             <segue destination="XvN-h6-M89" kind="show" id="SDF-Hh-VqN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read the application policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pic-7G-EI4">
-                                        <rect key="frame" x="86" y="795" width="216" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read the application policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-oX-SGN">
-                                        <rect key="frame" x="86" y="794" width="216" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read the application policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-oX-SGN">
+                                        <rect key="frame" x="88.666666666666686" y="787" width="216" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lLe-oX-SGN" secondAttribute="bottom" constant="43" id="0dw-Zl-woP"/>
+                                    <constraint firstItem="ceZ-rh-sQ8" firstAttribute="leading" secondItem="MiB-IC-h4n" secondAttribute="leading" constant="8" id="4Y6-Xm-tAp"/>
+                                    <constraint firstAttribute="trailing" secondItem="ceZ-rh-sQ8" secondAttribute="trailing" constant="8" id="66z-0X-7ZA"/>
+                                    <constraint firstItem="ux2-hu-yMA" firstAttribute="centerX" secondItem="MiB-IC-h4n" secondAttribute="centerX" id="NDv-gO-POH"/>
+                                    <constraint firstItem="lLe-oX-SGN" firstAttribute="centerX" secondItem="MiB-IC-h4n" secondAttribute="centerX" id="Orn-Zq-hNh"/>
+                                    <constraint firstItem="lLe-oX-SGN" firstAttribute="top" secondItem="ux2-hu-yMA" secondAttribute="bottom" constant="10" id="c51-f9-oFm"/>
+                                    <constraint firstItem="ceZ-rh-sQ8" firstAttribute="top" secondItem="MiB-IC-h4n" secondAttribute="top" constant="208" id="tOJ-8V-t58"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MiB-IC-h4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Tj-wk-zyJ"/>
+                            <constraint firstItem="MiB-IC-h4n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iJk-IC-JDK"/>
+                            <constraint firstItem="MiB-IC-h4n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="icE-sS-PuA"/>
+                            <constraint firstAttribute="bottom" secondItem="MiB-IC-h4n" secondAttribute="bottom" id="lwZ-yF-jVe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="Kng-yR-YfC">
             <objects>
-                <viewController id="XvN-h6-M89" sceneMemberID="viewController">
+                <viewController id="XvN-h6-M89" customClass="WelcomeViewController" customModule="close2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WQR-qW-IT2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,6 +173,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHb-1N-IGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942.74809160305335" y="-607.04225352112678"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="z7S-tY-dXH">
+            <objects>
+                <viewController id="OGe-QF-1zU" customClass="MapViewController" customModule="close2_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r4J-Ut-60f">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MAJ-2P-lUS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68M-Gw-CfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011" y="-49"/>
         </scene>
     </scenes>
     <resources>
