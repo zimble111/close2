@@ -6,24 +6,43 @@
 //
 
 import UIKit
+import GoogleMaps
+import CoreLocation
 
 class MapViewController: UIViewController {
-
+    
+    let sdkKey = "AIzaSyAABQtf3cFtqCtOZhV2RklUIfuskof3NYQ"
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var mapview: GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //        self.mapview.isMyLocationEnabled = true
+        //        locationManager.delegate = self
+        //        locationManager.requestWhenInUseAuthorization()
+        //        locationManager.startUpdatingLocation()
+        
+        GMSServices.provideAPIKey(sdkKey)
+        
+        
+        // license for google maps
+        let license = GMSServices.openSourceLicenseInfo()
     }
+    //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    //        if let location = locations.last  {
+    //            let coordinates = location.coordinate
+    //            let camera = GMSCameraPosition.camera(withLatitude: coordinates.latitude, longitude: coordinates.longitude, zoom: 6.0)
+    //            let mapView = GMSMapView.map(withFrame: self.mapview.frame, camera: camera)
+    //
+    //            self.locationManager.stopUpdatingLocation()
+    //
+    //        }
+    //        let marker = GMSMarker()
+    //        marker.position = CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
+    //        marker.title = "Sydney"
+    //        marker.snippet = "Australia"
+    //        marker.map = mapView
+    //    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

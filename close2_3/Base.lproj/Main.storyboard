@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OGe-QF-1zU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -181,13 +181,28 @@
                     <view key="view" contentMode="scaleToFill" id="r4J-Ut-60f">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K27-d1-vyU" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MAJ-2P-lUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="K27-d1-vyU" secondAttribute="bottom" id="SMD-Q8-3mG"/>
+                            <constraint firstItem="K27-d1-vyU" firstAttribute="top" secondItem="r4J-Ut-60f" secondAttribute="top" id="b0U-Sa-1vg"/>
+                            <constraint firstItem="K27-d1-vyU" firstAttribute="leading" secondItem="MAJ-2P-lUS" secondAttribute="leading" id="jsY-5Q-zKt"/>
+                            <constraint firstItem="K27-d1-vyU" firstAttribute="trailing" secondItem="MAJ-2P-lUS" secondAttribute="trailing" id="nDh-oA-JwN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapview" destination="K27-d1-vyU" id="nQJ-SE-L0k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68M-Gw-CfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2011" y="-49"/>
+            <point key="canvasLocation" x="2009.9236641221373" y="-49.295774647887328"/>
         </scene>
     </scenes>
     <resources>
