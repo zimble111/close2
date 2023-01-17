@@ -48,7 +48,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 163
+        if indexPath.row > 0 {
+            return 220
+        }
+        else {
+            return 163
+        }
     }
   
 }

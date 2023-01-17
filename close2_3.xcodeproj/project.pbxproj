@@ -16,6 +16,7 @@
 		04F4E0C829770D7B00EC9D66 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E0C729770D7B00EC9D66 /* ProfileTableViewCell.swift */; };
 		04F4E0CA2977234E00EC9D66 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E0C92977234E00EC9D66 /* FriendsTableViewCell.swift */; };
 		04F4E0CC2977248A00EC9D66 /* AddfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E0CB2977248A00EC9D66 /* AddfTableViewCell.swift */; };
+		04F4E0CE297743F700EC9D66 /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E0CD297743F700EC9D66 /* FriendsCollectionViewCell.swift */; };
 		65F89A78439704F2B8B4CCA1 /* libPods-close2_3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 040DB1BE8ECAC36E56164111 /* libPods-close2_3Tests.a */; };
 		77D9A8FF297319E5007A93E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9A8FE297319E5007A93E7 /* AppDelegate.swift */; };
 		77D9A901297319E5007A93E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9A900297319E5007A93E7 /* SceneDelegate.swift */; };
@@ -55,6 +56,7 @@
 		04F4E0C729770D7B00EC9D66 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		04F4E0C92977234E00EC9D66 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		04F4E0CB2977248A00EC9D66 /* AddfTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddfTableViewCell.swift; sourceTree = "<group>"; };
+		04F4E0CD297743F700EC9D66 /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1672220C3594708B4A08154C /* libPods-close2_3-close2_3UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-close2_3-close2_3UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD4342ED691705917366336 /* Pods-close2_3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-close2_3.debug.xcconfig"; path = "Target Support Files/Pods-close2_3/Pods-close2_3.debug.xcconfig"; sourceTree = "<group>"; };
 		348434960E4F689E1B483CE8 /* libPods-close2_3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-close2_3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,12 +168,13 @@
 				04F4E0C92977234E00EC9D66 /* FriendsTableViewCell.swift */,
 				04E66AA629743194005B21B1 /* WelcomeViewController.swift */,
 				04F4E0C529770A2000EC9D66 /* AddFriendViewController.swift */,
+				04F4E0CB2977248A00EC9D66 /* AddfTableViewCell.swift */,
+				04F4E0CD297743F700EC9D66 /* FriendsCollectionViewCell.swift */,
 				77D9A90A297319E7007A93E7 /* Assets.xcassets */,
 				77D9A90C297319E7007A93E7 /* LaunchScreen.storyboard */,
 				77D9A90F297319E7007A93E7 /* Info.plist */,
 				77D9A907297319E5007A93E7 /* close2_3.xcdatamodeld */,
 				47CFC49E2976AB91006994B7 /* map.json */,
-				04F4E0CB2977248A00EC9D66 /* AddfTableViewCell.swift */,
 			);
 			path = close2_3;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				77D9A903297319E5007A93E7 /* ViewController.swift in Sources */,
 				04E66AA9297431B2005B21B1 /* MapViewController.swift in Sources */,
 				04F4E0CC2977248A00EC9D66 /* AddfTableViewCell.swift in Sources */,
+				04F4E0CE297743F700EC9D66 /* FriendsCollectionViewCell.swift in Sources */,
 				04F4E0CA2977234E00EC9D66 /* FriendsTableViewCell.swift in Sources */,
 				04F4E0C829770D7B00EC9D66 /* ProfileTableViewCell.swift in Sources */,
 				04E66AA729743194005B21B1 /* WelcomeViewController.swift in Sources */,

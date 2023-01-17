@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -550,15 +551,15 @@
                                             <outlet property="cellView" destination="6aq-B1-K28" id="JUT-Qi-jTl"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendsTableViewCell" rowHeight="162" id="AHm-8g-V82" customClass="FriendsTableViewCell" customModule="close2_3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="212" width="393" height="162"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendsTableViewCell" rowHeight="221" id="AHm-8g-V82" customClass="FriendsTableViewCell" customModule="close2_3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="212" width="393" height="221"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHm-8g-V82" id="4xV-Df-kgA">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="162"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="221"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJc-4M-Fgb">
-                                                    <rect key="frame" x="20" y="11" width="353" height="140"/>
+                                                    <rect key="frame" x="20" y="11" width="353" height="199"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQU-QE-oIK">
                                                             <rect key="frame" x="17.999999999999996" y="18" width="56.666666666666657" height="21"/>
@@ -566,11 +567,80 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TLR-W1-2rh">
+                                                            <rect key="frame" x="18" y="47" width="317" height="152"/>
+                                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="epv-GK-EIj">
+                                                                <size key="itemSize" width="176" height="154"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            </collectionViewFlowLayout>
+                                                            <cells>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriendsCollectionViewCell" id="VzU-G6-AQe" customClass="FriendsCollectionViewCell" customModule="close2_3" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="-1" width="176" height="154"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RVO-dl-QHc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="154"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-uH-nsI">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="176" height="154"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GHT-v8-acq">
+                                                                                        <rect key="frame" x="53" y="8" width="70" height="70"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="70" id="j4z-54-vjb"/>
+                                                                                            <constraint firstAttribute="height" constant="70" id="m2e-Ka-hpa"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-po-L85">
+                                                                                        <rect key="frame" x="8" y="86" width="160" height="21"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="21" id="CKz-Ys-iDc"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="GHT-v8-acq" firstAttribute="top" secondItem="dbP-uH-nsI" secondAttribute="top" constant="8" id="1do-s0-Ug4"/>
+                                                                                    <constraint firstItem="vTw-po-L85" firstAttribute="top" secondItem="GHT-v8-acq" secondAttribute="bottom" constant="8" symbolic="YES" id="Cty-Ow-cQ8"/>
+                                                                                    <constraint firstItem="vTw-po-L85" firstAttribute="leading" secondItem="dbP-uH-nsI" secondAttribute="leading" constant="8" id="Em2-q9-HVk"/>
+                                                                                    <constraint firstItem="GHT-v8-acq" firstAttribute="centerX" secondItem="dbP-uH-nsI" secondAttribute="centerX" id="bJY-FF-TfK"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="vTw-po-L85" secondAttribute="trailing" constant="8" id="kMT-QM-2Vc"/>
+                                                                                    <constraint firstItem="vTw-po-L85" firstAttribute="centerX" secondItem="dbP-uH-nsI" secondAttribute="centerX" id="xNd-Mw-iL4"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="dbP-uH-nsI" secondAttribute="bottom" id="VnE-eC-DZp"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="dbP-uH-nsI" secondAttribute="trailing" id="nCd-AJ-Xal"/>
+                                                                            <constraint firstItem="dbP-uH-nsI" firstAttribute="leading" secondItem="RVO-dl-QHc" secondAttribute="leading" id="sAd-Va-miX"/>
+                                                                            <constraint firstItem="dbP-uH-nsI" firstAttribute="top" secondItem="RVO-dl-QHc" secondAttribute="top" id="zMW-DE-gvb"/>
+                                                                        </constraints>
+                                                                    </collectionViewCellContentView>
+                                                                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                                    <size key="customSize" width="176" height="154"/>
+                                                                    <connections>
+                                                                        <outlet property="collectionCellView" destination="dbP-uH-nsI" id="09R-En-2wq"/>
+                                                                        <outlet property="friendImg" destination="GHT-v8-acq" id="ZL9-j6-gRF"/>
+                                                                        <outlet property="friendName" destination="vTw-po-L85" id="jRR-9p-mf4"/>
+                                                                    </connections>
+                                                                </collectionViewCell>
+                                                            </cells>
+                                                        </collectionView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                     <constraints>
                                                         <constraint firstItem="gQU-QE-oIK" firstAttribute="top" secondItem="uJc-4M-Fgb" secondAttribute="top" constant="18" id="3mh-MY-PJg"/>
                                                         <constraint firstItem="gQU-QE-oIK" firstAttribute="leading" secondItem="uJc-4M-Fgb" secondAttribute="leading" constant="18" id="LsY-8Y-sBb"/>
+                                                        <constraint firstItem="TLR-W1-2rh" firstAttribute="top" secondItem="gQU-QE-oIK" secondAttribute="bottom" constant="8" symbolic="YES" id="YNM-ei-y9W"/>
+                                                        <constraint firstItem="TLR-W1-2rh" firstAttribute="leading" secondItem="uJc-4M-Fgb" secondAttribute="leading" constant="18" id="YUi-To-PEq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="TLR-W1-2rh" secondAttribute="bottom" id="aG3-fC-EKC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="TLR-W1-2rh" secondAttribute="trailing" constant="18" id="qLv-AO-Vuc"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -583,12 +653,13 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <connections>
+                                            <outlet property="friendsCollection" destination="TLR-W1-2rh" id="gae-0f-CHI"/>
                                             <outlet property="friendsLbl" destination="gQU-QE-oIK" id="jFK-L0-QXK"/>
                                             <outlet property="frindsView" destination="uJc-4M-Fgb" id="s1z-P2-dym"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddfTableViewCell" rowHeight="162" id="Vzk-od-R47" customClass="AddfTableViewCell" customModule="close2_3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="374" width="393" height="162"/>
+                                        <rect key="frame" x="0.0" y="433" width="393" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vzk-od-R47" id="mHo-8X-Vsf">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="162"/>
