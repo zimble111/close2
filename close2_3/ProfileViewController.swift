@@ -19,6 +19,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         profileTb.delegate = self
         profileTb.dataSource = self
+        
+        self.profileTb.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     //MARK: - Cells for tableview

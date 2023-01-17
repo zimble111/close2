@@ -499,7 +499,7 @@
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemCyanColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileTableViewCell" rowHeight="162" id="ROz-Fs-HYY" customClass="ProfileTableViewCell" customModule="close2_3" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileTableViewCell" rowHeight="162" id="ROz-Fs-HYY" customClass="ProfileTableViewCell" customModule="close2_3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ROz-Fs-HYY" id="3gD-nq-FwM">
@@ -543,13 +543,14 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="6aq-B1-K28" secondAttribute="bottom" id="sqf-jR-bgs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <connections>
                                             <outlet property="NameLabel" destination="Ww9-Tv-hLa" id="RMZ-tL-12y"/>
                                             <outlet property="ProfileImg" destination="pZg-am-CWO" id="YOb-oU-Ym7"/>
                                             <outlet property="cellView" destination="6aq-B1-K28" id="JUT-Qi-jTl"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendsTableViewCell" rowHeight="162" id="AHm-8g-V82" customClass="FriendsTableViewCell" customModule="close2_3" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendsTableViewCell" rowHeight="162" id="AHm-8g-V82" customClass="FriendsTableViewCell" customModule="close2_3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="212" width="393" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHm-8g-V82" id="4xV-Df-kgA">
@@ -580,12 +581,13 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="uJc-4M-Fgb" secondAttribute="bottom" id="fYN-Ji-WTe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <connections>
                                             <outlet property="friendsLbl" destination="gQU-QE-oIK" id="jFK-L0-QXK"/>
                                             <outlet property="frindsView" destination="uJc-4M-Fgb" id="s1z-P2-dym"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddfTableViewCell" rowHeight="162" id="Vzk-od-R47" customClass="AddfTableViewCell" customModule="close2_3" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddfTableViewCell" rowHeight="162" id="Vzk-od-R47" customClass="AddfTableViewCell" customModule="close2_3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="374" width="393" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vzk-od-R47" id="mHo-8X-Vsf">
@@ -616,6 +618,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="g2K-qS-jFu" secondAttribute="trailing" id="tsQ-Dp-4hu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <connections>
+                                            <outlet property="addView" destination="g2K-qS-jFu" id="jQk-ow-rdD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -625,7 +631,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3KZ-Rd-t2s"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="7MO-eM-ffw" firstAttribute="trailing" secondItem="3KZ-Rd-t2s" secondAttribute="trailing" id="B8c-Ja-67P"/>
                             <constraint firstItem="7MO-eM-ffw" firstAttribute="bottom" secondItem="3KZ-Rd-t2s" secondAttribute="bottom" id="EiE-w3-doO"/>
