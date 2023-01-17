@@ -14,7 +14,9 @@ class FriendsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        frindsView.layer.cornerRadius = 12
+        frindsView.layer.shadowRadius = 5
+        frindsView.layer.shadowOpacity = 0.3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -12,9 +12,13 @@ class ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var ProfileImg: UIImageView!
     @IBOutlet weak var NameLabel: UILabel!
     @IBOutlet weak var cellView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+//        cellView.layer.cornerRadius = 12
+//        cellView.layer.shadowRadius = 5
+//        cellView.layer.shadowOpacity = 0.3
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
