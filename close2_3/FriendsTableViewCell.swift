@@ -13,7 +13,7 @@ class FriendsTableViewCell: UITableViewCell {
     @IBOutlet weak var frindsView: UIView!
     @IBOutlet weak var friendsLbl: UILabel!
     
-    var friends = ["Putin", "Biden", "Mercel", "Macron", "Trump", "Lenin", "Obama"]
+    var friends = ["Putin", "Biden", "Mercel", "Macron", "Lenin", "Obama"]
 
     override func awakeFromNib() {
         super.awakeFromNib()
