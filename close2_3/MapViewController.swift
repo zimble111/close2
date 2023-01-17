@@ -44,6 +44,10 @@ class MapViewController: UIViewController {
        }
     }
     
+    func maoppp() {
+        print("coool")
+    }
+    
 }
 // MARK: - CLLocationManagerDelegate
 extension MapViewController: CLLocationManagerDelegate {
