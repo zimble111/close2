@@ -25,9 +25,23 @@ class MapViewController: UIViewController {
         
         GMSServices.provideAPIKey(sdkKey)
         
+        styleGoogleMaps()
         
         // license for google maps
         let license = GMSServices.openSourceLicenseInfo()
+    }
+    
+    private func styleGoogleMaps() {
+       do {
+           if let styleUrl = Bundle.main.url(forResource: "map", withExtension: "json"){
+               mapview.mapStyle = try GMSMapStyle(contentsOfFileURL: styleUrl)
+           }
+           else{
+               NSLog("unable to find style file")
+           }
+       }catch {
+           NSLog("failed to load")
+       }
     }
     
 }
