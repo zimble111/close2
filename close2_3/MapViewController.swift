@@ -11,10 +11,14 @@ import CoreLocation
 
 class MapViewController: UIViewController {
     
-    let sdkKey = "AIzaSyAABQtf3cFtqCtOZhV2RklUIfuskof3NYQ"
-    private let locationManager = CLLocationManager()
+    @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var locationBtn: UIButton!
+    @IBOutlet weak var profileBtn: UIButton!
     
     @IBOutlet weak var mapview: GMSMapView!
+    
+    let sdkKey = "AIzaSyAABQtf3cFtqCtOZhV2RklUIfuskof3NYQ"
+    private let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,18 @@ class MapViewController: UIViewController {
         GMSServices.provideAPIKey(sdkKey)
         
         styleGoogleMaps()
+        
+        locationBtn.layer.cornerRadius = 12
+        locationBtn.layer.shadowRadius = 10
+        locationBtn.layer.shadowOpacity = 0.3
+        
+        addBtn.layer.cornerRadius = 12
+        addBtn.layer.shadowRadius = 10
+        addBtn.layer.shadowOpacity = 0.3
+        
+        profileBtn.layer.cornerRadius = 12
+        profileBtn.layer.shadowRadius = 10
+        profileBtn.layer.shadowOpacity = 0.3
         
         // license for google maps
         let license = GMSServices.openSourceLicenseInfo()
@@ -43,12 +59,20 @@ class MapViewController: UIViewController {
            NSLog("failed to load")
        }
     }
-    
-    func maoppp() {
-        print("coool")
+    func users_location() {
+        mapview.animate(toLocation: locationManager.location!.coordinate)
+        mapview.animate(toZoom: 15)
+    }
+
+    @IBAction func showLocation(_ sender: Any) {
+        users_location()
     }
     
+    
 }
+
+
+
 // MARK: - CLLocationManagerDelegate
 extension MapViewController: CLLocationManagerDelegate {
   
